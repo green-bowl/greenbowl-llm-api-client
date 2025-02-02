@@ -1,0 +1,75 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.18'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'personal'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // web
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.7.12'
+
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
+
+    // json
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'org.json:json:20220924'
+    implementation 'org.apache.commons:commons-text:1.10.0'
+
+    // springfox
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+
+    // streaming
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    // security
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.7.8'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    implementation 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // aspect
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+    // health check
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // netty resolver
+    implementation 'io.netty:netty-resolver-dns:4.1.94.Final'
+    implementation 'io.netty:netty-resolver-dns-native-macos:4.1.94.Final:osx-aarch_64'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
+task printProjectName {
+    doLast {
+        println project.name
+    }
+}
+
+task printProjectVersion {
+    doLast {
+        println version
+    }
+}
+
+jar {
+    enabled = false
+}
