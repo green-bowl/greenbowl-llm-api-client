@@ -1,0 +1,45 @@
+server:
+  url: ${LLM_API_CLIENT_IP}
+  port: 443
+  ssl:
+    key-store: file:/app/keystore.p12
+    key-store-password: ${SSL_KEY_STORE_PASSWORD}
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+spring:
+  application:
+    name: llm-api-client
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+    view:
+      prefix: /
+      suffix: .html
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Seoul
+    serialization:
+      fail-on-empty-beans: false
+jwt:
+  secret:
+    key: ${LLM_API_CLIENT_JWT_SECRET_KEY}
+llm:
+  server:
+    secret-key: ${SECRET_KEY}
+    endpoint:
+      streaming: ${LLM_SERVER_STREAMING_ENDPOINT}
+      sse: /${LLM_SERVER_SSE_ENDPOINT}
+  type: ${LLM_TYPE}
+  template: ${LLM_TEMPLATE}
+  recipe:
+    template: ${LLM_RECIPE_TEMPLATE}
+frontend:
+  url: ${FRONTEND_URL}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      enabled: true
