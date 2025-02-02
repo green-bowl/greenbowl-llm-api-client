@@ -20,6 +20,8 @@ spring:
     time-zone: Asia/Seoul
     serialization:
       fail-on-empty-beans: false
+logging:
+  config: classpath:logback-spring.xml
 jwt:
   secret:
     key: ${LLM_API_CLIENT_JWT_SECRET_KEY}
