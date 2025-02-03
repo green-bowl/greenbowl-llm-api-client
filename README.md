@@ -16,6 +16,8 @@
 
 ## 📚 관련 URL
 - [서버 API](https://hyobin-llm-client.duckdns.org/swagger-ui/index.html)
+- [LLM Streaming 서버 API](https://hyobin-llm.duckdns.org/docs)
+- [LLM Streaming 서버 Repository](https://github.com/hellmir/LLM-Streaming-Server)
   <br><br>
 
 ## 🛠️ Skills
