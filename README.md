@@ -3,7 +3,7 @@
 ## 📋 프로젝트 설명
 - LLM Streaming Server를 통해 Spring 기반 서비스에서 LLM 스트리밍 서비스를 제공하는 API 클라이언트 템플릿
 - 기본 템플릿과 예시 제공
-  <br><br>
+<br><br>
 
 ## 📼 서비스 시연
 ![hyobin-llm](https://github.com/user-attachments/assets/f62ff497-d639-4176-b21a-e29d6cda76bd)
@@ -21,7 +21,7 @@
 
 ### 성효빈
 - 서버 개발, 배포 및 관리
-  <br>
+<br>
 
 ## 📚 관련 URL
 - [서비스 URL](https://hyobin-llm.vercel.app)
