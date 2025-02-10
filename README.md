@@ -13,29 +13,37 @@
 <b>2025. 02. 02</b>
 <br><br>
 
+## ![Image](https://github.com/user-attachments/assets/1838d6b9-69ff-43fe-80b1-b1e39709cef9) URL 변경 및 리팩터링
+<b>2025. 02. 10</b>
+<br><br>
+
 ## 👫 구성원
 
 ### 성효빈
 - 서버 개발, 배포 및 관리
-  <br>
+<br>
 
 ## 📚 관련 URL
-- [서버 API](https://hyobin-llm-client.duckdns.org/swagger-ui/index.html)
-- [LLM Streaming 서버 API](https://hyobin-llm.duckdns.org/docs)
 - [서비스 URL](https://hyobin-llm.vercel.app)
+- [LLM Streaming 서버 API](https://hyobin-llm.duckdns.org/docs)
+- [LLM Spring API 클라이언트 서버 API](https://hyobin-llm-spring.duckdns.org/swagger-ui/index.html)
+- [LLM Nest.js API 클라이언트 서버 API](https://hyobin-llm-nest.duckdns.org/api)
+- [LLM 클라이언트 Repository](https://github.com/hellmir/LLM-Streaming-Client)
 - [LLM Streaming 서버 Repository](https://github.com/hellmir/LLM-Streaming-Server)
-- [LLM Streaming 클라이언트 Repository](https://github.com/hellmir/LLM-Streaming-Client)
+- [LLM Nest API 클라이언트 서버 Repository](https://github.com/hellmir/LLM-Nest-API-Client)
   <br><br>
 
 ## ![ai](https://github.com/user-attachments/assets/d2cdfacc-c141-400c-9ba4-3f77d7664714) LLM Models
 - Mistral Large
-- Llama3.3
-- HCX-003
 - Gemini 1.5 Pro
+- Llama 3.3
+- HCX-003
 - GPT 3.5 Turbo
+- Claude Haiku
+- DeepSeek V3
 
 ## 🗼 Architecture
-![llm-service](https://github.com/user-attachments/assets/918c86f8-fd09-4988-ab2b-3ef2c9e3d220)
+![llm-service](https://github.com/user-attachments/assets/c63002e7-8260-4cd8-99de-7cbd4ab4d850)
 
 ## 🛠️ Skills
 
@@ -127,3 +135,20 @@
 [LSAC-16](https://langchain.atlassian.net/browse/LSAC-16) 서버 API 문서화를 위한 Swagger 추가
 
 [LSAC-25](https://langchain.atlassian.net/browse/LSAC-25) README.md 추가
+<br><br>
+
+## 릴리스 정보 - LLM Spring API Client - LlmSpringApiClientRelease02/10
+
+### 하위 작업
+
+[LSAC-30](https://langchain.atlassian.net/browse/LSAC-30) 일부 클래스의 마지막에 밑줄 추가
+
+[LSAC-31](https://langchain.atlassian.net/browse/LSAC-31) 서버 URL 변경
+
+[LSAC-32](https://langchain.atlassian.net/browse/LSAC-32) 일반 Streaming 응답과 SSE 응답 메서드의 중복을 제거하고 SSE 여부의 파라미터를 받도록 변경
+
+### 작업
+
+[LSAC-25](https://langchain.atlassian.net/browse/LSAC-25) README.md 추가
+
+[LSAC-29](https://langchain.atlassian.net/browse/LSAC-29) 전반적인 리팩터링

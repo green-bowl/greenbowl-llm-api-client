@@ -60,7 +60,7 @@ public class LLMController {
 
         StreamingProcessor.proceedStreaming(responseFlux);
 
-        return ResponseGenerator.generateResponse(responseFlux);
+        return ResponseGenerator.generateResponse(responseFlux, false);
     }
 
     @ApiOperation(value = GET_LLM_STREAMING_SSE, notes = GET_LLM_STREAMING_SSE_DESCRIPTION)
@@ -79,6 +79,6 @@ public class LLMController {
 
         StreamingProcessor.proceedStreaming(responseFlux);
 
-        return ResponseGenerator.generateResponse(responseFlux);
+        return ResponseGenerator.generateResponse(responseFlux, true);
     }
 }
