@@ -39,7 +39,7 @@ public class SwaggerConfig {
     private static final String TITLE = "LLM Streaming API Client Template";
     private static final String DESCRIPTION
             = "Spring Framework 환경에서 LLM Streaming 서비스를 구현할 수 있는 API Client 템플릿입니다.";
-    private static final String VERSION = "1.0";
+    private static final String VERSION = "1.1";
 
     @Bean
     public Docket api() {
