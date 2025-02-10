@@ -5,9 +5,18 @@ import org.springframework.http.ResponseEntity;
 import reactor.core.publisher.Flux;
 
 public class ResponseGenerator {
-    public static ResponseEntity<Flux<String>> generateResponse(Flux<String> responseFlux) {
+    public static ResponseEntity<Flux<String>> generateResponse(Flux<String> responseFlux, boolean isSSE) {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        if (isSSE) {
+            stringBuilder.append("data: ");
+        }
         return ResponseEntity.ok()
-                .contentType(MediaType.TEXT_PLAIN)
-                .body(responseFlux.flatMap(chunk -> Flux.just(chunk + "\n\n")));
+                .contentType(MediaType.TEXT_EVENT_STREAM)
+                .body(
+                        responseFlux.flatMap(chunk ->
+                                Flux.just(stringBuilder + chunk + "\n\n")
+                        )
+                );
     }
 }
