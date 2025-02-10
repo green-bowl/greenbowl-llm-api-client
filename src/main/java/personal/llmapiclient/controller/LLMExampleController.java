@@ -72,7 +72,7 @@ public class LLMExampleController {
 
         StreamingProcessor.proceedStreaming(responseFlux);
 
-        return ResponseGenerator.generateResponse(responseFlux);
+        return ResponseGenerator.generateResponse(responseFlux, false);
     }
 
     @ApiOperation(
@@ -97,6 +97,6 @@ public class LLMExampleController {
 
         StreamingProcessor.proceedStreaming(responseFlux);
 
-        return ResponseGenerator.generateResponse(responseFlux);
+        return ResponseGenerator.generateResponse(responseFlux, true);
     }
 }
