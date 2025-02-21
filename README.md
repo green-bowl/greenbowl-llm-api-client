@@ -1,4 +1,4 @@
-# ![llm](https://github.com/user-attachments/assets/b66e143c-0f7d-4f09-97a6-04a484767025) Spring  WebFlux 기반 생성형 AI  Streaming API Client 템플릿<br><br>
+# ![llm](https://github.com/user-attachments/assets/b66e143c-0f7d-4f09-97a6-04a484767025) Spring  WebFlux 기반 생성형 AI Streaming API Client 템플릿 <img src="https://img.shields.io/badge/v1.1-6DB33F?style=flat-square&logo=Adobe&logoColor=white"><br><br>
 
 ## 📋 프로젝트 설명
 - LLM Streaming Server를 통해 Spring 기반 서비스에서 LLM 스트리밍 서비스를 제공하는 API 클라이언트 템플릿
@@ -38,7 +38,7 @@
 - HCX-003
 - Gemini 1.5 Pro
 - Llama 3.3
-- GPT 3.5 Turbo
+- GPT 4o Mini
 - Claude Haiku
 - DeepSeek V3
 
